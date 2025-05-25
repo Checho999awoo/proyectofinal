@@ -9,7 +9,7 @@ library(dplyr)
 library(ggplot2)
 
 # 1. Leer archivo original
-fact <- read_delim("C:\Users\sergi\Downloads/Facturacion FEBRERO 2025.csv", delim = ";")
+fact <- read_delim("C:/Users/sergi/Downloads/Facturacion FEBRERO 2025.csv", delim = ";")
 
 # 2. Limpiar y convertir variables clave
 fact <- fact %>%
@@ -67,4 +67,4 @@ ggplot(fact_model_simple, aes(x = PREDICHO_SIMPLE, y = VR_TOTAL - PREDICHO_SIMPL
   )
 
 # 9. Exportar CSV con predicciones del modelo simple
-write_csv(fact_model_simple, "C:/Users/Santiago.Obregon/Downloads/Facturacion_PREDICCIONES_SIMPLE.csv")
+write_csv(fact_model_simple, "C:/Users/sergi/Downloads/Facturacion_PREDICCIONES_SIMPLE.csv")
